@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+
+<LinearLayout
+    android:id="@+id/layoutI"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layoutI1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="20">
+
+        <TextView
+            android:id="@+id/outI1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/logo"
+            android:text="agoda"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/layoutII1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="3">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/layoutBody2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/layoutI2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="30px"
+                        android:background="#FFFFCC">
+
+                        <LinearLayout
+                            android:id="@+id/layoutI21"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/RelativeLayoutI211"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <Button
+                                    android:id="@+id/ButtonI211"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:layout_marginStart="10px"
+                                    android:layout_marginTop="10px"
+                                    android:layout_marginEnd="10px"
+                                    android:layout_marginBottom="10px"
+                                    android:text="Khách Sạn"
+                                    android:background="#00000000"
+                                   /> <!--chỉnh độ phóng đại-->
+                                <!-- app:srcCompat="@drawable/hinhmot"-->
+                                <ImageView
+                                    android:id="@+id/ImageViewI211"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:layout_centerInParent="true"
+                                    android:scaleType="centerCrop"
+                                    app:srcCompat="@drawable/hinhmot" /><!--đặt giữa trung tâm so với cha nó-->
+                                <!--android:layout_centerInParent="true"-->
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:id="@+id/RelativeLayoutI212"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3">
+
+                                <Button
+                                    android:id="@+id/ButtonI212"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:layout_marginStart="10px"
+                                    android:layout_marginTop="10px"
+                                    android:layout_marginEnd="10px"
+                                    android:layout_marginBottom="10px"
+                                    android:text="Chuyến bay"
+                                    android:background="#00000000"/>
+
+                                <ImageView
+                                    android:id="@+id/ImageView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:layout_centerInParent="true"
+                                    app:srcCompat="@drawable/hinhhai" /><!--đặt giữa trung tâm so với cha nó-->
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutI22"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <RelativeLayout
+                                android:id="@+id/RelativeLayoutI22"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <Button
+                                    android:id="@+id/ButtonI221"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:layout_marginStart="10px"
+                                    android:layout_marginTop="10px"
+                                    android:layout_marginEnd="10px"
+                                    android:layout_marginBottom="10px"
+                                    android:text="Chuyến bay + Khách sạn"
+                                    android:background="#00000000"/>
+
+
+                                <ImageView
+                                    android:id="@+id/ImageViewI221"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:layout_centerInParent="true"
+                                    app:srcCompat="@drawable/hinhba" /><!--đặt giữa trung tâm so với cha nó-->
+
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:id="@+id/RelativeLayoutI23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <Button
+                                    android:id="@+id/ButtonI222"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:text= "Hoạt động"
+                                    android:background="#00000000"/>
+
+                                <ImageView
+                                    android:id="@+id/ImageViewI23"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    app:srcCompat="@drawable/hinhbon"/><!--đặt giữa trung tâm so với cha nó-->
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/RelativeLayoutI24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <Button
+                                    android:id="@+id/ButtonI24"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:text="Chỗ ở riêng"
+                                    android:background="#00000000"/>
+
+                                <ImageView
+                                    android:id="@+id/ImageViewI24"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    app:srcCompat="@drawable/hinhnam" /><!--đặt giữa trung tâm so với cha nó-->
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                  <!-- -&#45 Phần 5 nút ;&#45;-->
+                    <RelativeLayout
+                        android:id="@+id/RelativeLayoutBody3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="70px"
+                        android:layout_marginLeft="70px"
+                        android:background="#FFFF99">
+
+                        <Button
+                            android:id="@+id/buttonBody3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#00000000"
+                            android:gravity="end"
+                            android:text="xem"/>
+
+                        <ImageView
+                            android:id="@+id/imageViewBody3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@android:drawable/btn_star_big_on"/>
+
+                        <TextView
+                            android:id="@+id/textViewBody3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="100px"
+                            android:layout_marginRight="100px"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:text="Phiếu giảm giá 10% cho lần đầu đặt phòng trên ứng dụng" />
+
+                    </RelativeLayout>
+
+
+
+                    <!-- -&#45 Phần phiếu giảm giá ;&#45;-->
+                    <TextView
+                        android:id="@+id/text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Khuyến mãi có thời hạn !"
+                        android:textStyle="bold"
+                        android:layout_margin="30px"/>
+
+
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/view_pager"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp">
+                    </androidx.viewpager2.widget.ViewPager2>
+
+                    <TextView
+                        android:id="@+id/textViewBody333333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100px"
+                        android:layout_marginRight="100px"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="Phiếu giảm giá 10% cho lần đầu đặt phòng trên ứng dụng" />
+
+                    <RelativeLayout
+                        android:id="@+id/RelativeLayoutI21111"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/ButtonI21111"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="10px"
+                            android:layout_marginTop="10px"
+                            android:layout_marginEnd="10px"
+                            android:layout_marginBottom="10px"
+                            android:text="Khách Sạn"
+                            android:background="#00000000"
+                            /> <!--chỉnh độ phóng đại-->
+                        <!-- app:srcCompat="@drawable/hinhmot"-->
+                        <ImageView
+                            android:id="@+id/ImageViewI21111"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_centerInParent="true"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/hinhmot" /><!--đặt giữa trung tâm so với cha nó-->
+                        <!--android:layout_centerInParent="true"-->
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/layoutBoyIII"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="20">
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutBoyIII1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/imageViewBoyIII1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@id/buttonBoyIII1"
+                android:layout_alignRight="@id/buttonBoyIII1"
+                app:srcCompat="?attr/actionModeSelectAllDrawable"
+                />
+
+            <Button
+                android:id="@+id/buttonBoyIII1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trang chủ"
+                android:background="#00000000"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutBoyIII2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/imageViewBoyIII2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@id/buttonBoyIII2"
+                android:layout_alignRight="@id/buttonBoyIII2"
+                app:srcCompat="@android:drawable/ic_menu_my_calendar"
+                />
+
+            <Button
+                android:id="@+id/buttonBoyIII2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đơn đặt chỗ"
+                android:background="#00000000"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutBoyIII3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/imageViewBoyIII3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@id/buttonBoyIII3"
+                android:layout_alignRight="@id/buttonBoyIII3"
+                app:srcCompat="@android:drawable/btn_star_big_off"
+                />
+
+            <Button
+                android:id="@+id/buttonBoyIII3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ưu đãi"
+                android:background="#00000000"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutBoyIII4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/imageViewBoyIII4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@id/buttonBoyIII4"
+                android:layout_alignRight="@id/buttonBoyIII4"
+                app:srcCompat="@android:drawable/ic_menu_myplaces"
+                />
+
+            <Button
+                android:id="@+id/buttonBoyIII4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xe đẩy hàng"
+                android:background="#00000000"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutBoyIII5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/imageViewBoyIII5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@id/buttonBoyIII5"
+                android:layout_alignRight="@id/buttonBoyIII5"
+                app:srcCompat="@android:drawable/ic_dialog_dialer"
+                />
+
+            <Button
+                android:id="@+id/buttonBoyIII5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thêm"
+                android:background="#00000000"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

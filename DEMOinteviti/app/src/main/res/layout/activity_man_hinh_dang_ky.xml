@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManHinh_DangKy">
+
+    <LinearLayout
+        android:id="@+id/LayoutDangKy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/Xam">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/textViewDangKy"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Đăng ký"
+                android:textSize="30dp"
+                android:gravity="center_horizontal"/>
+
+            <ImageButton
+                android:id="@+id/imageButtonQuayVeDangNhap"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                app:srcCompat="?attr/actionModeCloseDrawable"
+                android:background="#00000000"
+                android:contentDescription="Quay về màn hình Thêm"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/LayoutDangKy2"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textViewDangKy2"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:text="Tên:"
+                    android:textSize="20dp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/editTextTextPasswordDangKy2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:layout_marginLeft="80dp"
+                    android:gravity="center_vertical"
+                    android:hint="Tên"
+                    android:textSize="20dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textViewDangKy3"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:text="Họ:"
+                    android:textSize="20dp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/editTextTextPasswordDangKy3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:layout_marginLeft="80dp"
+                    android:gravity="center_vertical"
+                    android:hint="Họ"
+                    android:textSize="20dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textViewDangKy4"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:text="Email:"
+                    android:textSize="20dp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/editTextTextPasswordDangKy4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:layout_marginLeft="80dp"
+                    android:gravity="center_vertical"
+                    android:hint="Email"
+                    android:textSize="20dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textViewDangKy5"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:text="Mật khẩu:"
+                    android:textSize="20dp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/editTextTextPasswordDangKy5"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:layout_marginLeft="80dp"
+                    android:gravity="center_vertical"
+                    android:hint="Mật khẩu"
+                    android:textSize="20dp"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/buttonDangKy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Đăng ký" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

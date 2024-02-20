@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_them"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManHinh_Them">
+<LinearLayout
+    android:id="@+id/layoutI"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:id="@+id/ScrollView_Them"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/ButtonDangNhap_Dangky"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Đăng nhập/ Đăng ký"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:background="#00000000"
+                    /> <!--chỉnh độ phóng đại-->
+                <!-- -->
+                <ImageView
+                    android:id="@+id/ImageViewDangNhap_DangKy"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@android:drawable/ic_lock_lock"
+                    /><!--đặt giữa trung tâm so với cha nó-->
+                <!--android:layout_centerInParent="true"-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/ButtonDsYeuThich"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Danh sách yêu thích"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:background="#00000000"
+                    /> <!--chỉnh độ phóng đại-->
+                <!-- app:srcCompat="@drawable/hinhmot"-->
+                <ImageView
+                    android:id="@+id/ImageViewDsYeuThich"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@android:drawable/star_big_on"/><!--đặt giữa trung tâm so với cha nó-->
+                <!--android:layout_centerInParent="true"-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/ButtonKhuyenMai"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Khuyến mãi"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:background="#00000000"
+                    /> <!--chỉnh độ phóng đại-->
+                <!-- app:srcCompat="@drawable/hinhmot"-->
+                <ImageView
+                    android:id="@+id/ImageViewKhuyenMai"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@android:drawable/ic_input_add"/><!--đặt giữa trung tâm so với cha nó-->
+                <!--android:layout_centerInParent="true"-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/ButtonGiaHienThi"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Giá hiện thị"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:background="#00000000"
+                    /> <!--chỉnh độ phóng đại-->
+                <!-- app:srcCompat="@drawable/hinhmot"-->
+                <ImageView
+                    android:id="@+id/ImageViewGiaHienThi"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@android:drawable/ic_menu_sort_by_size"/><!--đặt giữa trung tâm so với cha nó-->
+                <!--android:layout_centerInParent="true"-->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/ButtonThongBao"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Thông báo"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:background="#00000000"
+                    /> <!--chỉnh độ phóng đại-->
+                <!-- app:srcCompat="@drawable/hinhmot"-->
+                <ImageView
+                    android:id="@+id/ImageViewThongBao"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@android:drawable/ic_popup_reminder"/><!--đặt giữa trung tâm so với cha nó-->
+                <!--android:layout_centerInParent="true"-->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/ButtonTrungTamTroGiup"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Trung tâm trợ giúp"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:background="#00000000"
+                    /> <!--chỉnh độ phóng đại-->
+                <!-- app:srcCompat="@drawable/hinhmot"-->
+                <ImageView
+                    android:id="@+id/ImageViewTrungTamTroGiup"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@android:drawable/ic_dialog_info"/><!--đặt giữa trung tâm so với cha nó-->
+                <!--android:layout_centerInParent="true"-->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/ButtonVeChungToi"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Về chúng tôi"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:background="#00000000"
+                    /> <!--chỉnh độ phóng đại-->
+                <!-- app:srcCompat="@drawable/hinhmot"-->
+                <ImageView
+                    android:id="@+id/ImageViewVeChungToi"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@android:drawable/ic_menu_help"/><!--đặt giữa trung tâm so với cha nó-->
+                <!--android:layout_centerInParent="true"-->
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layoutBoyIII"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="14">
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutBoyIII1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+            <ImageView
+                android:id="@+id/imageViewBoyIII1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@id/buttonBoyIII1"
+                android:layout_alignRight="@id/buttonBoyIII1"
+                app:srcCompat="?attr/actionModeSelectAllDrawable"
+                />
+
+            <Button
+                android:id="@+id/buttonBoyIII1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trang chủ"
+                android:background="#00000000"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutBoyIII2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+            <ImageView
+                android:id="@+id/imageViewBoyIII2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@id/buttonBoyIII2"
+                android:layout_alignRight="@id/buttonBoyIII2"
+                app:srcCompat="@android:drawable/ic_menu_my_calendar"
+                />
+
+            <Button
+                android:id="@+id/buttonBoyIII2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đơn đặt chỗ"
+                android:background="#00000000"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutBoyIII3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+            <ImageView
+                android:id="@+id/imageViewBoyIII3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@id/buttonBoyIII3"
+                android:layout_alignRight="@id/buttonBoyIII3"
+                app:srcCompat="@android:drawable/btn_star_big_off"
+                />
+
+            <Button
+                android:id="@+id/buttonBoyIII3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ưu đãi"
+                android:background="#00000000"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutBoyIII4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+            <ImageView
+                android:id="@+id/imageViewBoyIII4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@id/buttonBoyIII4"
+                android:layout_alignRight="@id/buttonBoyIII4"
+                app:srcCompat="@android:drawable/ic_menu_myplaces"
+                />
+
+            <Button
+                android:id="@+id/buttonBoyIII4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:text="Xe đẩy hàng" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutBoyIII5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+            <ImageView
+                android:id="@+id/imageViewBoyIII5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@id/buttonBoyIII5"
+                android:layout_alignRight="@id/buttonBoyIII5"
+                app:srcCompat="@android:drawable/ic_dialog_dialer"
+                />
+
+            <Button
+                android:id="@+id/buttonBoyIII5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thêm"
+                android:background="#00000000"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
